@@ -2,6 +2,8 @@
 
 [React](https://ko.reactjs.org/)를 학습하기 위해 [News API](https://newsapi.org/)을 이용하여 개발한 뉴스뷰어 입니다.
 
+[링크](https://namhyun-gu.github.io/react-news-viewer)를 통해 바로 실행해 볼 수 있습니다.
+
 ## 사용한 기술
 
 ### 언어
@@ -28,3 +30,4 @@
 
 - [flux-standard-action](https://github.com/redux-utilities/flux-standard-action)
 - [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux)
+- [gh-pages](https://github.com/tschaub/gh-pages)
