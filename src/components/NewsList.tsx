@@ -1,21 +1,12 @@
 import React from 'react';
 import useNews from '../hooks/useNews';
 import NewsItem from './NewsItem';
-import { makeStyles, CircularProgress } from '@material-ui/core';
-
-const useStyles = makeStyles({
-  progress: {
-    marginTop: 16
-  }
-});
-
 
 function NewsList() {
   const newsState = useNews();
-  const classes = useStyles();
 
   if (newsState.status === 'loading') {
-    return <CircularProgress className={ classes.progress } />;
+    return <div></div>;
   }
 
   if (newsState.data.length === 0) {
@@ -23,13 +14,13 @@ function NewsList() {
   }
 
   return (
-    <ul>
+    <div>
       {
         newsState.data.map(news => (
           <NewsItem key={ news.id } news={ news } />
         ))
       }
-    </ul>
+    </div>
   );
 }
 

@@ -4,6 +4,6 @@ import { fetchRequested } from "../modules/news";
 
 export default function useNewsActions() {
   const dispatch = useDispatch();
-  const onUpdate = useCallback(() => dispatch(fetchRequested()), [dispatch]);
-  return { onUpdate };
+  const requestFetch = useCallback(() => dispatch(fetchRequested()), [dispatch]);
+  return { requestFetch };
 }
